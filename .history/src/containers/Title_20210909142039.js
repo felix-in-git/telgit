@@ -12,7 +12,6 @@ const Title = () => {
     const twitter_usernames = JSON.stringify((twitter_username));
     const dispatch = useDispatch();
     console.log(product);
-    console.log(blogs)
 
     const fetchProductDetail = async () => {
         const rensponse = await axios
@@ -47,7 +46,7 @@ const Title = () => {
                                 </Item.Meta>
                                 <Item.Description>{description}</Item.Description>
                                 <Item.Extra>
-                                        <Link to={{ pathname: "maps.google.com" }} target="_blank" >
+                                        <Link to={{ pathname: "https://example.zendesk.com/hc/en-us/articles/123456789-Privacy-Policies" }} target="_blank" >
                                             <span>
                                                 <i class="location arrow icon"></i>
                                                 {location}

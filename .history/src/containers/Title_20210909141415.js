@@ -7,12 +7,10 @@ import { selectedProducts } from "../redux/actions/productActions";
 
 const Title = () => {
     const product = useSelector((state) => state.product);
-    const { name, description, avatar_url, location, twitter_username, blog } = product;
-    const blogs = JSON.stringify((blog));
-    const twitter_usernames = JSON.stringify((twitter_username));
+    const { name, description, avatar_url, location, twitter_username, blog } =
+        product;
     const dispatch = useDispatch();
     console.log(product);
-    console.log(blogs)
 
     const fetchProductDetail = async () => {
         const rensponse = await axios
@@ -47,19 +45,19 @@ const Title = () => {
                                 </Item.Meta>
                                 <Item.Description>{description}</Item.Description>
                                 <Item.Extra>
-                                        <Link to={{ pathname: "maps.google.com" }} target="_blank" >
+                                        <Link to={{ pathname: "https://example.zendesk.com/hc/en-us/articles/123456789-Privacy-Policies" }} target="_blank" >
                                             <span>
                                                 <i class="location arrow icon"></i>
                                                 {location}
                                             </span>
                                         </Link>
-                                        <Link to={{ pathname: { blogs } }} target="_blank" >
+                                        <Link to={{ pathname: "https://example.zendesk.com/hc/en-us/articles/123456789-Privacy-Policies" }} target="_blank" >
                                             <span>
                                                 <i class="linkify icon"></i>
                                                 {blog}
                                             </span>
                                         </Link>
-                                        <Link to={{ pathname: "https://twitter.com/" + { twitter_usernames } }} target="_blank" >
+                                        <Link to={{ pathname: "https://example.zendesk.com/hc/en-us/articles/123456789-Privacy-Policies" }} target="_blank" >
                                             <span>
                                                 <i class="twitter icon"></i>
                                                 {twitter_username}

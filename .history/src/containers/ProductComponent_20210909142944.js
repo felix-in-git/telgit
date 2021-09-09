@@ -22,11 +22,8 @@ import axios from 'axios';
 
 const ProductComponent = () => {
     const products = useSelector((state) => state.allProducts.products);
-
-
-
     products.sort(function (a, b) {
-        return b.stargazers_count.toString() - a.stargazers_count.toString();
+        return a.stargazers_count.localeCompare(b.stargazers_count);
     });
 
     const renderList = products.map((products) => {

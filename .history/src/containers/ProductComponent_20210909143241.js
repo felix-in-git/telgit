@@ -26,7 +26,7 @@ const ProductComponent = () => {
 
 
     products.sort(function (a, b) {
-        return b.stargazers_count.toString() - a.stargazers_count.toString();
+        return a.stargazers_count.toString() - b.stargazers_count.toString();
     });
 
     const renderList = products.map((products) => {

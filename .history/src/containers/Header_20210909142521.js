@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
     Button,
     Container,
@@ -20,7 +19,7 @@ const Header = () => {
 
         <Container>
             <Menu stackable>
-                <Link to={`/`}>
+                <Link to={`/product/${id}`}>
                 <Menu.Item>
                     <i class="github square icon"></i>
                     TelGit

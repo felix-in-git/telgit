@@ -8,11 +8,10 @@ import { selectedProducts } from "../redux/actions/productActions";
 const Title = () => {
     const product = useSelector((state) => state.product);
     const { name, description, avatar_url, location, twitter_username, blog } = product;
-    const blogs = JSON.stringify((blog));
-    const twitter_usernames = JSON.stringify((twitter_username));
+    const blogs = JSON.stringify(JSON.parse(blog));
+    const twitter_usernames = JSON.stringify(JSON.parse(twitter_username));
     const dispatch = useDispatch();
     console.log(product);
-    console.log(blogs)
 
     const fetchProductDetail = async () => {
         const rensponse = await axios
@@ -47,7 +46,7 @@ const Title = () => {
                                 </Item.Meta>
                                 <Item.Description>{description}</Item.Description>
                                 <Item.Extra>
-                                        <Link to={{ pathname: "maps.google.com" }} target="_blank" >
+                                        <Link to={{ pathname: "https://example.zendesk.com/hc/en-us/articles/123456789-Privacy-Policies" }} target="_blank" >
                                             <span>
                                                 <i class="location arrow icon"></i>
                                                 {location}
