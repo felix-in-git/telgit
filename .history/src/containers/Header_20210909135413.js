@@ -20,7 +20,7 @@ const Header = () => {
         <Container>
             <Menu stackable>
                 <Menu.Item>
-                    <i class="github square icon"></i>
+                    <i class="twitter icon"></i>
                     TelGit
                 </Menu.Item>
                 <Popup
@@ -35,15 +35,18 @@ const Header = () => {
                     mouseEnterDelay={500}
                     mouseLeaveDelay={500}
                     on='hover'
-                    trigger={<Menu.Item>Products</Menu.Item>}
+                    trigger={<Menu.Item>About</Menu.Item>}
                 />
                 <Popup
                     content='This features will be comming soon.'
                     mouseEnterDelay={500}
                     mouseLeaveDelay={500}
                     on='hover'
-                    trigger={<Menu.Item>Sign-in</Menu.Item>}
+                    trigger={<Menu.Item>About</Menu.Item>}
                 />
+
+                <Menu.Item>Products</Menu.Item>
+                <Menu.Item>Sign-in</Menu.Item>
             </Menu>
         </Container>
     );

@@ -20,7 +20,7 @@ const Header = () => {
         <Container>
             <Menu stackable>
                 <Menu.Item>
-                    <i class="github square icon"></i>
+                    <i class="twitter icon"></i>
                     TelGit
                 </Menu.Item>
                 <Popup

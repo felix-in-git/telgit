@@ -23,7 +23,7 @@ import axios from 'axios';
 const ProductComponent = () => {
     const products = useSelector((state) => state.allProducts.products);
     const renderList = products.map((products) => {
-        const { id, name, image, description, full_name, stargazers_count, forks_count, language } = products;
+        const { id, name, image, description, full_name, stargazers_count } = products;
         return (
             <Card>
                 <Card.Content>
@@ -39,15 +39,15 @@ const ProductComponent = () => {
                     <Grid columns={3} stackable>
                         <Grid.Column>
                             <i class="file alternate icon"></i>
-                            {language}
+                            location
                         </Grid.Column>
                         <Grid.Column>
                             <i class="star icon"></i>
-                            {stargazers_count}
+                            blog
                         </Grid.Column>
                         <Grid.Column>
                             <i class="wrench icon"></i>
-                            {forks_count}
+                            twitter_username
                         </Grid.Column>
                     </Grid>
                 </Card.Content>
