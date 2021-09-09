@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# TelGit is a simplify github facebook repo used to TASK FOR FRONT END DEVELOPER
+
+## Using Redux Axios REST API
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
