@@ -12,7 +12,7 @@ const ProductComponent = () => {
     });
 
     const renderList = products.map((products) => {
-        const { id, name, clone_url, description, full_name, stargazers_count, forks_count, language } = products;
+        const { id, name, image, description, full_name, stargazers_count, forks_count, language } = products;
         return (
             <Card>
                 <Card.Content>
@@ -23,10 +23,10 @@ const ProductComponent = () => {
                     <Card.Description>
                         {description}
                     </Card.Description>
-                    <div class="ui action input grid" style={{ padding: 30 }}>
-                        <input type="text" class="copyInput" value={clone_url} />
-                        <button type="button" name="copyToken" value="copy" class="copyToken ui right icon button">
-                            <i class="clipboard icon"></i>
+                    <div class="ui action input">
+                        <input type="text" class="copyInput" value="http://kushy.net/confirm/58493-2847593-3849?token=58349$3959$$8393038848">
+                        <button type ="button" name="copyToken" value="copy" class ="copyToken ui right icon button">
+                        <i class ="clipboard icon"></i>
                         </button>
                     </div>
                 </Card.Content>

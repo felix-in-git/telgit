@@ -23,7 +23,7 @@ const ProductComponent = () => {
                     <Card.Description>
                         {description}
                     </Card.Description>
-                    <div class="ui action input grid" style={{ padding: 30 }}>
+                    <div class="ui action input">
                         <input type="text" class="copyInput" value={clone_url} />
                         <button type="button" name="copyToken" value="copy" class="copyToken ui right icon button">
                             <i class="clipboard icon"></i>

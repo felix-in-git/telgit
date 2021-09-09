@@ -1,9 +1,9 @@
-import axios from "axios";
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { Card } from 'semantic-ui-react';
+import axios from "axios";
+import { useSelector, useDispatch } from "react-redux";
 import { setProducts } from "../redux/actions/productActions";
 import ProductComponent from "./ProductComponent";
+import { Card } from 'semantic-ui-react';
 
 
 const ProductListing = () => {

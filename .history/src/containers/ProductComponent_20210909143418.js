@@ -1,8 +1,24 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import {
-    Card, Grid
+    Card,
+    Button,
+    Container,
+    Grid,
+    Header,
+    Icon,
+    Image,
+    Item,
+    Label,
+    Menu,
+    Segment,
+    Step,
+    Table,
 } from "semantic-ui-react";
+import Title from "./Title";
+import ProductListing from './ProductListing';
+import axios from 'axios';
 
 const ProductComponent = () => {
     const products = useSelector((state) => state.allProducts.products);
@@ -12,7 +28,7 @@ const ProductComponent = () => {
     });
 
     const renderList = products.map((products) => {
-        const { id, name, clone_url, description, full_name, stargazers_count, forks_count, language } = products;
+        const { id, name, image, description, full_name, stargazers_count, forks_count, language } = products;
         return (
             <Card>
                 <Card.Content>
@@ -23,12 +39,6 @@ const ProductComponent = () => {
                     <Card.Description>
                         {description}
                     </Card.Description>
-                    <div class="ui action input grid" style={{ padding: 30 }}>
-                        <input type="text" class="copyInput" value={clone_url} />
-                        <button type="button" name="copyToken" value="copy" class="copyToken ui right icon button">
-                            <i class="clipboard icon"></i>
-                        </button>
-                    </div>
                 </Card.Content>
                 <Card.Content>
                     <Grid columns={3} stackable>

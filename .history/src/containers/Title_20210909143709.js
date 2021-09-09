@@ -8,8 +8,8 @@ import { selectedProducts } from "../redux/actions/productActions";
 const Title = () => {
     const product = useSelector((state) => state.product);
     const { name, description, avatar_url, location, twitter_username, blog } = product;
-    const blogs = blog
-    const twitter_usernames = twitter_username
+    const blogs = blog.toString()
+    const twitter_usernames = twitter_username.toString()
     const dispatch = useDispatch();
     console.log(product);
     console.log(blogs)

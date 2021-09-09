@@ -1,8 +1,24 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import {
-    Grid, Segment
+    Card,
+    Button,
+    Container,
+    Grid,
+    Header,
+    Icon,
+    Image,
+    Item,
+    Label,
+    Menu,
+    Segment,
+    Step,
+    Table,
 } from "semantic-ui-react";
+import Title from "./Title";
+import ProductListing from './ProductListing';
+import axios from 'axios';
 
 const ProductFavorite = () => {
     const products = useSelector((state) => state.allProducts.products);
@@ -118,6 +134,12 @@ const ProductFavorite = () => {
         </Grid>
     );
 
+    const renderList = products.map((products) => {
+
+
+    });
+
+    return <>{renderList}</>;
 };
 
 export default ProductFavorite;

@@ -1,8 +1,9 @@
-import axios from "axios";
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
 import { removeSelectedProducts, selectedProducts } from "../redux/actions/productActions";
+import { Card, Icon, Image } from 'semantic-ui-react'
 
 const ProductDetail = () => {
     const product = useSelector((state) => state.product);

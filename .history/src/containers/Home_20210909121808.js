@@ -1,9 +1,21 @@
 import React from "react";
 import {
-    Container, Segment
+    Button,
+    Container,
+    Grid,
+    Icon,
+    Image,
+    Item,
+    Label,
+    Menu,
+    Segment,
+    Step,
+    Table,
 } from "semantic-ui-react";
-import ProductListing from "./ProductListing";
+import ProductComponent from "./ProductComponent";
 import Title from "./Title";
+import ProductListing from "./ProductListing";
+import ProductFavorite from "./ProductFavorite";
 
 const Home = () => {
     return (
